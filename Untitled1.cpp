@@ -1,24 +1,12 @@
-#include<iostream>
-#include<conio.h>
-using namespace std;
+#include<stdio.h>
 int main()
 {
-	int n,i;
-	cout<<"enter total numbers in array:";
-	cin>>n;
-	int arr[n];
-	for(i=0;i<n;i++)
+	int i,x;
+	printf("enter a number:");
+	scanf("%d",&x);
+	for(i=1;i<=10;i++)
 	{
-		cin>>arr[i];
+		printf("%d*%d=%d\n",x,i,x*i);
 	}
-	cout<<"numbers are:";
-	for(i=0;i<n;i++)
-	{
-		cout<<arr[i]<<" ";
-	}
-	cout<<"reverse of a numbers:";
-	for(i=n-1;i>=0;i--)
-	{
-		cout<<arr[i]<<" ";
-	}
+	return 0;
 }
