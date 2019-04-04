@@ -1,14 +1,50 @@
 #include<iostream>
 #include<conio.h>
-using namespace std;
+class A
+{
+	private:
+		int a,b,s;
+		int n;
+		public:
+			A()
+			{
+				a=5;
+				b=6;
+			}
+		//void getdata();
+			//std::cout<<"enter a number";
+			//std::cin>>a>>b;
+			void sum();
+
+			
+			//s=a+b;
+			//std::cout<<"our sum is:"<<s;
+	
+			
+
+};
+/*void A::getdata()
+{
+	std::cout<<"enter a number";
+	std::cin>>a>>b;
+}*/
+void A::sum()
+{
+	s=a+b;
+	std::cout<<"sum value is:"<<s;
+	
+}
 int main()
 {
-	float num1,num2,sum,avg;
-	cout<<"enter two number:\n";
-	cin>>num1>>num2;
-	sum=num1+num2;
-	avg=sum/2;
-	cout<<"average of two number  is= "
-	<<avg<<"\n";
-	return 0;
+A a;
+//a.getdata();
+a.sum();
+return 0;
 }
+	/*int a,b,s,n;
+	std::cout<<" enter a number";
+	std::cin>>a>>b;
+	s=a+b;
+	std::cout<<"sum number is:"<<s;
+	return 0;
+}*/

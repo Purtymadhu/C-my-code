@@ -1,21 +1,12 @@
-#include <stdio.h> 
-
-int main() {
-  int n, i, c = 0;
-  printf("Enter any number n:");
-  scanf("%d", &n);
-
-    for (i = 1; i <= n; i++) {
-      if (n % i == 0) {
-         c++;
-      }
-  }
-
-  if (c == 2) {
-  printf("n is a Prime number");
-  }
-  else {
-  printf("n is not a Prime number");
-  }
-  return 0;    
+#include<iostream>
+#include<conio.h>
+int main()
+{
+	int arr[10],i;
+	for(i=1;i<10;i++)
+	{
+	std::cin>>arr[i];
+	std::cout<<"my array value is"<<arr[i+1];
+}
+return 0;
 }
